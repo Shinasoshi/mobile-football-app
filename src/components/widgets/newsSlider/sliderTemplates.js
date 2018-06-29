@@ -8,12 +8,13 @@ const SliderTemplates = (props) => {
     let template = null
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         arrows: false,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        ...props.settings
     }
 
     switch (props.type) {
@@ -22,7 +23,6 @@ const SliderTemplates = (props) => {
                 return(
                     <div key ={i}>
                         <div className={style.featuredItem}>
-
                             <div className={style.featuredImage}
                                  style={{
                                      background: `url(../images/articles/${item.image})`
