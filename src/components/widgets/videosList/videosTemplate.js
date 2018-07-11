@@ -3,7 +3,7 @@ import style from "./videosList.css"
 import {Link} from "react-router-dom"
 import CardInfo from "../cardInfo/cardInfo"
 
-const videosTemplate = (props) => {
+const VideosTemplate = (props) => {
 
     return props.data.map((item,i)=>(
 
@@ -24,4 +24,4 @@ const videosTemplate = (props) => {
         </Link>
     ))
 }
-export default videosTemplate
+export default VideosTemplate
